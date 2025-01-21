@@ -28,7 +28,7 @@ from utils.entropy_models import Entropy_bernoulli, Entropy_gaussian, Entropy_fa
 
 from utils.encodings import \
     STE_binary, STE_multistep, Quantize_anchor, \
-    GridEncoder, FreqEncoder, \
+    GridEncoder, \
     anchor_round_digits, \
     get_binary_vxl_size
 
@@ -365,8 +365,6 @@ class GaussianModel(nn.Module):
             nn.Linear(feat_dim, 3*self.n_offsets),
             nn.Sigmoid()
         ).cuda()
-
-        self.freq_enc = FreqEncoder(3, 4)
 
         self.mlp_grid = nn.Sequential(
             nn.Linear(self.encoding_xyz.output_dim, feat_dim*2),
