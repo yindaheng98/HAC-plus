@@ -44,8 +44,6 @@ class="center">
 
 We tested our code on a server with Ubuntu 20.04.1, cuda 11.8, gcc 9.4.0.
 
-HAC++ utilizes the same environment as HAC.
-
 1. Unzip files
 ```
 cd submodules
