@@ -13,12 +13,12 @@ Official Pytorch implementation of **HAC++: Towards 100X Compression of 3D Gauss
 ## Links
 Welcome to check a series of works from our group on 3D radiance field representation compression as listed below:
 - 🎉 [CNC](https://github.com/yihangchen-ee/cnc/) [CVPR'24] is now released for efficient NeRF compression! [[`Paper`](https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_How_Far_Can_We_Compress_Instant-NGP-Based_NeRF_CVPR_2024_paper.pdf)] [[`Arxiv`](https://arxiv.org/pdf/2406.04101)] [[`Project`](https://yihangchen-ee.github.io/project_cnc/)]
-- 🏠 [HAC](https://github.com/yihangchen-ee/hac/) [ECCV'24] is now released for efficient 3DGS compression! [[`Paper`](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01178.pdf)] [`Arxiv`](https://arxiv.org/pdf/2403.14530)] [[`Project`](https://yihangchen-ee.github.io/project_hac/)]
+- 🏠 [HAC](https://github.com/yihangchen-ee/hac/) [ECCV'24] is now released for efficient 3DGS compression! [[`Paper`](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01178.pdf)] [[`Arxiv`](https://arxiv.org/pdf/2403.14530)] [[`Project`](https://yihangchen-ee.github.io/project_hac/)]
 - 💪 [HAC++](https://github.com/yihangchen-ee/hac-plus/) [ARXIV'25] is an enhanced compression method over HAC! [[`Arxiv`](https://arxiv.org/pdf/xxxxx)] [[`Project`](https://yihangchen-ee.github.io/project_hac++/)]
 - 🚀 [FCGS](https://github.com/yihangchen-ee/fcgs/) [ARXIV'24] is now released for fast optimization-free 3DGS compression! [[`Arxiv`](https://arxiv.org/pdf/2410.08017)] [[`Project`](https://yihangchen-ee.github.io/project_fcgs/)]
 
 ## Updates
-🔥Jan-2025: HAC++ is an enhanced compression method over [HAC](https://github.com/yihangchen-ee/hac/)!
+🔥Jan-2025: HAC++ is now released as an enhanced version of [HAC](https://github.com/yihangchen-ee/hac/)!
 
 ## Overview
 <p align="left">
@@ -58,6 +58,12 @@ cd ..
 conda env create --file environment.yml
 conda activate HAC_env
 ```
+
+3. Install ```tmc3``` (for GPCC)
+
+- Please refer to [tmc3 github](https://github.com/MPEGGroup/mpeg-pcc-tmc13) for installation.
+- Don't forget to add ```tmc3``` to your environment variable, otherwise you must manually specify its location [in our code](https://github.com/YihangChen-ee/HAC-plus/blob/main/utils/gpcc_utils.py). 
+- Tips: ```tmc3``` is commonly located at ```/PATH/TO/mpeg-pcc-tmc13/build/tmc3```.
 
 ## Data
 
@@ -159,4 +165,5 @@ Please follow the LICENSE of [3D-GS](https://github.com/graphdeco-inria/gaussian
 ## Acknowledgement
 
  - We thank all authors from [3D-GS](https://github.com/graphdeco-inria/gaussian-splatting) for presenting such an excellent work.
- - We thank all authors from [Scaffold-GS](https://github.com/city-super/Scaffold-GS) for presenting such an excellent work.
+ - We thank all authors from [Scaffold-GS](https://github.com/city-super/Scaffold-GS) for presenting such an excellent work. 
+ - We thank [Xiangrui](https://liuxiangrui.github.io)'s help on GPCC codec.
