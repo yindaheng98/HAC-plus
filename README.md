@@ -18,7 +18,7 @@ Welcome to check a series of works from our group on 3D radiance field represent
 - 🚀 [FCGS](https://github.com/yihangchen-ee/fcgs/) [ARXIV'24] is now released for fast optimization-free 3DGS compression! [[`Arxiv`](https://arxiv.org/pdf/2410.08017)] [[`Project`](https://yihangchen-ee.github.io/project_fcgs/)]
 
 ## Updates
-🔥Jan-2025: HAC++ is now released as an enhanced version of [HAC](https://github.com/yihangchen-ee/hac/)!
+🔥Jan-2025: HAC++ is now released an enhanced compression method over [HAC](https://github.com/yihangchen-ee/hac/)!
 
 ## Overview
 <p align="left">
