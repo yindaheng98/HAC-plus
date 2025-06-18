@@ -161,7 +161,7 @@ def read_binary_data(dst_bin_path: str, src_file_handle) -> None:
 def compress_gaussian_params(
         gaussian_params,
         bin_path,
-        gpcc_codec_path='tmc3'
+        gpcc_codec_path='~/mpeg-pcc-tmc13/build/tmc3/tmc3'
 ):
     """
     Compress Gaussian model parameters.
@@ -213,7 +213,7 @@ def compress_gaussian_params(
 
 def decompress_gaussian_params(
         bin_path,
-        gpcc_codec_path='tmc3'
+        gpcc_codec_path='~/mpeg-pcc-tmc13/build/tmc3/tmc3'
 ):
     """
     Decompress Gaussian model parameters.
@@ -242,7 +242,7 @@ def decompress_gaussian_params(
 
     return means_dec, voxelized_means, means_min, means_max
 
-def compress_gpcc(x: torch.Tensor, gpcc_codec_path: str='tmc3') -> bytes:
+def compress_gpcc(x: torch.Tensor, gpcc_codec_path: str='~/mpeg-pcc-tmc13/build/tmc3/tmc3') -> bytes:
     """
     Compress geometry point cloud by GPCC codec.
     """
@@ -257,7 +257,7 @@ def compress_gpcc(x: torch.Tensor, gpcc_codec_path: str='tmc3') -> bytes:
             strings = f.read()
     return strings
 
-def decompress_gpcc(strings: bytes, gpcc_codec_path: str='tmc3') -> torch.Tensor:
+def decompress_gpcc(strings: bytes, gpcc_codec_path: str='~/mpeg-pcc-tmc13/build/tmc3/tmc3') -> torch.Tensor:
     """
     Decompress geometry point cloud by GPCC codec.
     """
