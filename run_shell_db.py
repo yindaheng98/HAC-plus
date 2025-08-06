@@ -2,9 +2,9 @@ import os
 
 for lmbda in [0.004]:  # Optionally, you can try: 0.003, 0.002, 0.001, 0.0005
     for cuda, scene in enumerate([
-        'basketball/frame1',
-        'boxes/frame1',
-        'football/frame1',
+        'coffee_martini/frame1',
+        'cook_spinach/frame1',
+        'cut_roasted_beef/frame1',
         'flame_salmon_1/frame1',
         'flame_steak/frame1',
         'sear_steak/frame1',
